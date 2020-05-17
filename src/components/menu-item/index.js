@@ -3,7 +3,6 @@ import { withRouter } from 'react-router-dom'
 import './styles.scss';
 
 const MenuIten = (props) => {
-    console.log(props, props.match.url)
     return (
        <div className={`${props.section.size} menu-item`}
        onClick = {()=> props.history.push(`${props.match.url}${props.section.linkUrl}`)}
